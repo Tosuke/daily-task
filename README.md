@@ -32,15 +32,6 @@ to your `config.fish`, reload your shell and run `fundle install`
 $ fresco Tosuke/daily-task
 ```
 
-
-## Requirements
-
-
-## :wrench: Configurations
-| Variable | Remarks | Default |
-| -------- | ------- | ------- |
-
-
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [travis-link]: https://travis-ci.org/Tosuke/daily-task
 [travis-badge]: https://img.shields.io/travis/Tosuke/daily-task.svg
