@@ -7,7 +7,7 @@ function daily-task -d "run daily task"
   end
   for cmd in $argv
     if not contains "$cmd" $DAILY_TASK_DONE_TASK
-      eval "$cmd"; and set -U DAILY_TASK_DONE_TASK DAILY_TASK_DONE_TASK "$cmd"
+      eval "$cmd"; and set -U DAILY_TASK_DONE_TASK $DAILY_TASK_DONE_TASK "$cmd"
     end
   end
 end
