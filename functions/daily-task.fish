@@ -1,7 +1,7 @@
 function daily-task -d "run daily task"
   set -l today (date +'%Y/%m/%d')
   set -q DAILY_TASK_DONE_TASK; or set -U DAILY_TASK_DONE_TASK
-  if not set -q DAILY_TASK_DAY; or test $DAILY_TASK_DAY!=$today
+  if not set -q DAILY_TASK_DAY; or test $DAILY_TASK_DAY != $today
     set -U DAILY_TASK_DONE_TASK
     set -U DAILY_TASK_DAY $today
   end
